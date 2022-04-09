@@ -1,0 +1,105 @@
+.portfolio{
+    background: #1f2235;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: azure;
+    height: 69vh;
+
+    h1{
+        margin-top: 2rem;
+        font-size: 40px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #ff4a57;
+        font-weight: 600;
+        text-transform: capitalize;
+        text-decoration: underline;
+    }
+    ul{
+        margin: 10px;
+        padding: 0;
+        list-style: none;
+        display: flex;
+       
+    }
+
+    .containerP{
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+
+        .itemP{
+            width: 420px;
+            height: 220px;
+            border-radius: 10px;
+            border: 0.5px solid rgba(163, 159, 159, 0.514);
+            margin: 10px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: beige;
+            position: relative;
+            transition: all .5s ease;
+            cursor: pointer;
+
+            .Ptitle{
+                position: absolute;
+                font-size: 17px;
+                color: aqua;
+                
+                .ref{
+                color: aqua;
+                }
+                .ref:hover{
+                color: rgb(11, 1, 53);
+                }
+            }
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                z-index: 1;
+                border-radius: 10px;
+            }
+
+            &:hover{
+                background-color: rgba(141, 146, 144, 0.425);
+
+                img{
+                    opacity: 0.2;
+                    z-index: 0;
+                }
+            }
+        }
+    }   
+    
+}
+
+@media (max-width: 960px) {
+    .portfolio{               
+        height: 77vh;
+
+        h1{
+            font-size: 25px;
+        }
+    
+        ul{
+            flex-wrap: wrap;
+           justify-content: center;
+            margin: 10px 0;                
+        }
+    
+        .containerP{
+            width: 80%;
+    
+            .itemP{
+                width: 320px;
+                height: 145px;
+            }
+        }
+    }
+                  
+}
+

@@ -1,20 +1,34 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./App.css";
 import Servicess from "./components/Servicess";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Bannier from "./components/Bannier";
+import Bannier from "./components/Bannier/Bannier";
 import About from "./components/About";
 import Contact from "./components/Contact";
-import Mailer from "./components/Mailer";
-import Projects from "./components/Projects";
+import ContactMe from "./components/ContactMe/ContactMe";
 import Navbar from "./components/Navbar/Navbar";
+import Formation from "./components/Formation";
+import SkillCont from "./components/MySkills/SkillCont";
+import ScrollToTop from "./components/index";
 import Particles from "react-particles-js";
+import Portfolio from "./components/Portfolio/Portfolio.jsx";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+const App = (props) => {
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+    });
+  }, [])
 
 
-function App() {
+
+
   return (
     <div id="app">
       <Navbar />
+      <ScrollToTop />
       <Particles
         className="particles-canvas"
         params={{
@@ -89,8 +103,8 @@ function App() {
             }
           },
           "retina_detect": true
-        }} />
-      <Bannier />
+        }} />      
+      <Bannier />      
       <Servicess />
       <Particles
         className="particlescanvas"
@@ -138,6 +152,7 @@ function App() {
           "retina_detect": true
         }} />
       <About />
+      <SkillCont />
       <Particles
         className="particlescanvas"
         params={{
@@ -183,8 +198,9 @@ function App() {
           },
           "retina_detect": true
         }} />
-      <Projects />
-      <Mailer />
+      <Formation />
+      <Portfolio />
+      <ContactMe />
       <Contact />
     </div>
   );

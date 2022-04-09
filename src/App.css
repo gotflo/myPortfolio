@@ -2,8 +2,44 @@
   margin : 0;
   padding: 0;
   box-sizing: border-box;
-  z-index: 2;
+  z-index: 2;  
 }
+.scroll-to-top{
+  position: fixed;
+  bottom: 12px;
+  left: 95%;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: #ff4a57;
+  color: #fff;
+  z-index: 1;
+  cursor: pointer;
+}
+.scroll-to-top .icone{
+  margin-top: 10px;
+  animation: scrollTop 0.5s alternate ease infinite;
+}
+@keyframes scrollTop{
+  from{
+    transform: translateY(2px);
+  }
+  to{
+    transform: translateY(-1x);
+  }
+}
+/* (A) GRID CONTAINER */
+#grid-row {
+  display: grid;
+  grid-template-columns: auto auto;
+  /* NOTE: ROW 3 ONWARDS WILL BE AUTO HEIGHT */
+  grid-template-rows: 80px 100px;
+ 
+  /* SAME AS COLUMNS, WE CAN USE REPEAT AS WELL
+  grid-template-rows: repeat(4, 50px); */
+}
+ 
+/* (B) GRID CELLS */
 .row {
   --bs-gutter-x: 1.5rem;
   --bs-gutter-y: 0;
@@ -13,11 +49,13 @@
   margin-right: calc(var(--bs-gutter-x) * -.5);
   margin-left: calc(var(--bs-gutter-x) * -.5);
 }
-.particlescanvas{
-  z-index: 0;
+.particlescanvas, .particles-canvas{
+  z-index: -1;
 }
+
 body{
   font-family : 'Poppins', sans-serif ;
+  /* overflow: hidden; */
 }
 .header{
   width: 100%;
@@ -92,14 +130,20 @@ z-index: 0;
 .navbar_left-logo img{
   width: 110px;  
 }
-.iconn, .iconnw, .iconni{
+.iconn, .iconnw, .iconni, .icong{
   color: white;
+}
+.Lien{
+  color: rgb(184, 224, 240);
 }
 .iconnw:hover{
   color: green;
 }
 .iconni:hover{
   color: red;
+}
+.icong:hover{
+ color: #000;
 }
 /***********************************************************************/
 
@@ -111,17 +155,36 @@ width: 33.333333333333333%;
 .services__boxx{
   padding: 50px;
   width: 53vh;
+  height: 46vh;
+  margin: 20px auto;  
+  background: #23263a;
+  color: #fff;
+  box-shadow: 0 0 1px rgba(0, 225, 255, 0.178),
+                0 0 8px rgba(0, 225, 255, 0.164),
+                 /* 0 0 15px rgba(0, 226, 255, 1),
+                 0 0 20px rgba(0, 226, 255, 1), */
+                0 0 0 1px rgba(255, 214, 0, .1);
+}
+.fservices__boxx{
+  padding: 50px;
+  width: 53vh;  
   margin: 20px auto;  
   background: #23263a;
   color: #fff;
 }
 .services__boxx:hover {
   background: #ff4a5694;
+  box-shadow: 0 0 1px rgba(0, 225, 255, 0.336),
+                0 0 8px rgba(0, 225, 255, 0.411),
+                 /* 0 0 15px rgba(0, 226, 255, 1),
+                 0 0 20px rgba(0, 226, 255, 1), */
+                0 0 0 1px rgba(255, 214, 0, .1);
 }
 .github {
   font-size: 40px;
   color: #4ad9e4;
-  margin-bottom: 15px;
+  margin-bottom: 7px;
+  margin-top: -2rem;
 }
 .services__box:hover .github {
   color: #fff;  
@@ -130,10 +193,19 @@ width: 33.333333333333333%;
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 15px;
+  /* margin-top: -4rem; */
 }
 .servicess__box-p{
   font-size: 16px;
   color: #dfdfdf;
+  text-align: justify;
+    margin: 0 auto;    
+    /* text-align-last: justify; */
+    /* font-family: ; */
+}
+.fservicess__box-p{
+  font-size: 16px;
+  color: #dfdfdf;  
 }
 .roww{
   display: flex;
@@ -144,6 +216,12 @@ width: 33.333333333333333%;
   display: flex;
   width: 100%;
   flex-wrap: wrap;
+}
+.rowwsF{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 
@@ -312,102 +390,7 @@ width: 33.333333333333333%;
   width: 250px;
   border-image: linear-gradient;
 }*/
-/****************************Projects**************************/
-.MesProjets{
-  margin-bottom: 11px; 
-  margin-top: 10px; 
-  text-align: center;
-  color: #fff;
-}
-.project{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    background: #1f2235;
-    display: flex;      
-    width: 100%; 
-}
-.project{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 45vh;     
-}
-.card{
-    width: 250px;
-    height: 200px;
-    color: rgb(247, 242, 242);
-    margin: 1em;
-    border-radius: 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 0 1.5em;
-    text-align: center;
-    cursor: pointer;
-    position: relative;      
-}
 
-.dispocard{   
-   width: 100%;     
-   display: flex;  
-   list-style: none;
-   justify-content: center;    
-}
-.card::before, .card::after{
-    content: '';
-    position: absolute;
-    background: #1f2537;
-    width: 100%;
-    height: 40%;
-    z-index: -10;
-    border-radius: 15px 15px 0 0;
-    transition: all .4s;
-}
-.card::before{
-    top: 0;    
-}
-.card:hover::before{
-    transform: translateY(-20px);
-}
-.card::after{
-    bottom: 10px;
-    height: 60%;
-    border-radius: 0 0 15px 15px;    
-}
-.icon{
-    width: 60px;
-    height: 60px;
-    background: #DA0037;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-}
-.card:hover .icon{
-    box-shadow: 0 0 10px red;
-}
-.icon i{
-    font-size: 1.5em;
-}
-.card p{
-    margin: 0.5em 0;
-    font-size: 0.8em;
-    display: none;
-    opacity: 0;
-    color: rgb(179, 174, 174);
-    transition: all .4s;    
-}
-.card:hover p{
-    display: block;
-    opacity: 1;
-}
-.card h4{
-    margin-top: 0.5em;
-}
-/***************************************************************/
 /*Services*/
 .services {
   background: #272d46;
@@ -450,35 +433,7 @@ width: 33.333333333333333%;
   padding: .4rem auto;
   margin: 50px auto;
 }*/
-/*****************Mailer*************************/
-.container__border{
-  margin-top:  0px;
-  width: 100%;
-  color: #dfdfdf;
-  justify-content: center;  
-  background: #23263a;
-  background-position: center;
-  background-size: cover;
-  z-index: 2;
-}
-.Contactez-moi{
-  margin-top: 1px;
-  justify-content: center; 
-  align-items: center;
-  padding-left: 42%;
-}
-.form-control{
-  z-index: 2;
-}
-.forme{
-  width: 40%;
-  margin-left: 32%; 
-  z-index: 2;
-}
-.imp{
-  background-color: #1f2235;
-}
-/**************************************************/
+
 .services__box-header {
   font-size: 20px;
   font-weight: 500;
@@ -492,10 +447,19 @@ width: 33.333333333333333%;
   width: 100%;
   background: #23263a;
   padding: 50px 0;
+  margin-bottom: -8rem;
+}
+
+.about1__img{
+  box-shadow: 0 0 2px rgba(0, 225, 255, 0.411),
+  0 0 10px rgba(0, 225, 255, 0.452),
+   /* 0 0 15px rgba(0, 226, 255, 1),
+   0 0 20px rgba(0, 226, 255, 1), */
+  0 0 0 1px rgba(255, 214, 0, .1);
 }
 .about__img {
   padding: auto;
-  margin-left: 10%;
+  margin-left: 10%;  
 }
 .about__img img {
   width: 300px;
@@ -536,7 +500,7 @@ width: 33.333333333333333%;
 /* Prices */
 
 .contact {  
-  background: #272d46;
+  background: #1b1b1b;
 }
 /*.contactSection-logo {
   text-align: center;
@@ -550,62 +514,6 @@ width: 33.333333333333333%;
   color: #fff;
   font-size: 14px;
   margin-bottom: 20px;
-}
-/******************mes connaisances*******************************/
-.commonBorderr {
-  background: #ff4a57;
-  height: 3px;
-  width: 100px;
-  margin: 15px auto;
-}
-.connaissances__Conta{
-  background: #242841;
-  display: flex;
-  /*width: 60%;
-  margin-left: 20%;*/
-  justify-content: center;
-  margin-top: -5%;
-  padding: 0.01%;
-  margin-bottom: -4rem;
-}
-.connaissances{
-  font-size: 18px;
-  margin: 0 40%;
- /* font-family : 'Poppins', sans-serif ;*/
-  color: rgb(251, 252, 253);
-}
-.icons{
-padding-top: 9px;
-margin-bottom: 1.2rem;
-}
-.Icon{
-  font-size: 50px;
-}
-.connaissnceCircles {
-  width: 100%;  
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
-.connaissancesM{ 
-  margin-bottom: 11px; 
-  text-align: center;
-}
-.connaissnceCircles li {
-  width: 60px;
-  height: 60px;
-  border-radius: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(112, 182, 228);
-  background: #1f2235;  
-  margin: 0 50px;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.connaissnceCircles li:hover {
-  background: #ff4a57;
 }
 
 /********************************************************/
@@ -623,13 +531,13 @@ margin-bottom: 1.2rem;
   align-items: center;
   justify-content: center;
   color: #fff;
-  background: #1f2235;
+  background: #222121;
   margin: 0 10px;
   transition: all 0.5s linear;
   cursor: pointer;
 }
 .contactCircles li:hover {
-  background: #ff4a57;
+  background: #1ed98b;
 }
 .toggle {
   position: fixed;
@@ -648,9 +556,67 @@ margin-bottom: 1.2rem;
 /**********************************nav bar***********************/
 
 
+/*******************************************Modal**************************/
+
+body.active-modal {
+  overflow-y: hidden;
+}
+
+.btn-modal {
+  padding: 10px 20px;
+  display: block;
+  margin: 100px auto 0;
+  font-size: 18px;
+}
+
+.modal, .overlay {
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+}
+
+.overlay {
+  background: rgba(49,49,49,0.8);
+}
+.modal-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  line-height: 1.4;
+  background: #f1f1f1;
+  padding: 14px 28px;
+  border-radius: 3px;
+  max-width: 600px;
+  min-width: 300px;
+}
+
+.close-modal {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  padding: 5px 7px;
+}
+
+/*****************************************************************************/
+
+
 /********************************************************************/
 
 @media (max-width: 960px) {
+  .scroll-to-top{
+    left: 86%;
+    width: 35px;
+    bottom: 12px;
+    height: 35px;
+  }
+  .scroll-to-top .icone{
+    margin-top: 8px;
+  }
   .particles-canvas{
   display: none;
   }
@@ -668,137 +634,32 @@ margin-bottom: 1.2rem;
     margin-left: 0rem;
     margin-top: 5rem;
   } 
-/*******************************projects**************************/
-.MesProjets{
-  margin-bottom: 11px; 
-  text-align: center;
-  color: #fff;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.dispocard{     
-  align-items: center;
-  height: 50vh;  
-  width: 100%;    
-  display: block; 
-  list-style: none;  
-  justify-content: center; 
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.card{
-  width: 90%;
-  height: 100%;
-  color: white;
-  margin: 1em;
-  border-radius: 15px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  padding: 0 1.5em;
-  text-align: center;
-  cursor: pointer;
-  position: relative;   
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-}
-.colrr{
-  color: rgb(236, 230, 230);
-}
-
-.project{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
-  background: #1f2235;
-  display: flex;   
-  width: 100%; 
-}
-.project{
-  padding-top: 0rem;
-  padding-bottom: 9rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 90vh;
-  padding-right: 5%;
-}
-.card p{
-  margin: 0.9em 0;
-  font-size: 0.8em;
-  display: none;
-  opacity: 0;  
-  transition: all .4s;
-}
+  .rowwsF{
+    display: block;
+    width: 100%;
+    flex-wrap: wrap;    
+  }
+  .imCis{
+    height: 170px;
+  }
 
 
-/**********************************************************************/
-  /******************mes connaisances*******************************/
-.commonBorderr {
-  background: #ff4a57;
-  height: 3px;
-  width: 100px;
-  margin: 15px auto;
-}
-.connaissances__Conta{
-  background: #242841;
-  display: flex;
-  justify-content: center;
-  margin-top: -5%;
-  padding: 2%;
-  margin-bottom: -4rem;
-}
-.connaissances{
-  font-size: 18px;
-  margin: 0 40%;
-  color: rgb(251, 252, 253);
-}
-.icons{
-padding-top: 9px;
-}
-.Icon{
-  font-size: 33px;
-}
-.connaissnceCircles {
-  width: 100%;  
-  display: flex;
-  list-style: none;
-  justify-content: center;
-}
-.connaissancesM{ 
-  margin-bottom: 11px; 
-  text-align: center;
-}
-.connaissnceCircles li {
-  width: 50px;
-  height: 50px;
-  border-radius: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: rgb(112, 182, 228);
-  background: #1f2235;
-  margin: 0 2% auto;
-  transition: all 0.5s linear;
-  cursor: pointer;
-}
-.connaissnceCircles li:hover {
-  background: #ff4a57;
-}
+  .btnn {
+    margin-top: -3rem;    
+    z-index: 1;  
+  }
 
-/********************************************************/ 
+  /*************************************************/
+
   .justifyConter{
     width: 50%;
-    margin: 10px 0;
+    margin: 5px 0;        
   }
+  .col69{
+    justify-content: center;
+    text-align: center;
+    margin-left: 16%;     
+  }  
   .about__img img {
     width: 250px;
     height: 290px;
@@ -820,9 +681,16 @@ padding-top: 9px;
   .services__boxx{
     padding: 50px;
     width: 250%;
+    height: 46vh;
     margin: 22px;    
     background: #23263a;
     color: #fff;
+    transition: all 0.5s linear;
+  }
+  .fservices__boxx{
+    padding: 50px;
+    width: 250%;
+    margin: 22px;        
     transition: all 0.5s linear;
   }
   
@@ -901,28 +769,29 @@ padding-top: 9px;
   .container {
     width: 50% ;
     padding: 0 50px;
-     margin: 0 auto;
-     padding-left: 0;
-     margin-left: 0;
-     margin-right: 0;
+    margin: 0 auto;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 0;
   }
   /************************************Contact*************************************************************/
   
   .contact{
     width: 100% ;
-    display: block;
+    display: block;    
     justify-content: center;
     text-align: justify;     
     top: 0;
     bottom: 0;
     left: 0;
-     right: 0;
+    right: 0;
   }
   .mot_fin{
     display: block;  
     margin-bottom: 10px;
     justify-content: center;
     text-align: center;
+    font-size: 16px;
   }
   .contactCircles {
     width: 50%;
@@ -960,6 +829,7 @@ padding-top: 9px;
  padding: 0 50px;
   margin: 0 auto;
   display: block;
+  margin-bottom: 3rem;
   justify-content: center;
   margin-top: -5%;
   padding: 2%; 
@@ -984,11 +854,15 @@ padding-top: 9px;
      left: 0;
      right: 0;
      }
-  /*.col66{
-    text-align: center;
-   
-    justify-content: center;
-  }*/
+ #grid-row {
+      display: grid;
+      grid-template-columns: auto auto;
+      /* NOTE: ROW 3 ONWARDS WILL BE AUTO HEIGHT */
+      grid-template-rows: 80px 100px;
+      font-size: 13px ;
+      /* SAME AS COLUMNS, WE CAN USE REPEAT AS WELL
+      grid-template-rows: repeat(4, 50px); */
+    }
   /********************************************************************************************************/
   .col-6 {
     width: 100%;
@@ -1060,7 +934,8 @@ padding-top: 9px;
     height: 60%;
     padding-top: .50rem;
     padding-bottom: .50rem;
-    font-size: 2px;  
+    font-size: 2px; 
+    margin-left: -2.5rem; 
   }  
   .navbar_left-logo img{
     width: 110px;  
@@ -1068,30 +943,7 @@ padding-top: 9px;
   .navbar__container {    
     margin-left: -.6rem;
   }
-  /*****************Mailer*************************/
-.container__border{
-  margin-top:  0px;
-  width: 100%;  
-  color: #dfdfdf;
-  justify-content: center;  
-  background: #23263a;
-  background-position: center;
-  background-size: cover;
-}
-.Contactez-moi{  
-  justify-content: center; 
-  align-items: center;
-  padding-left: 28%;
-  height: 7vh;
-}
-.forme{
-  width: 90%;
-  margin-left: 5%; 
-}
-.imp{
-  background-color: #1f2235;
-}
-/**************************************************/
+  
 }
 .bgMain{
   background-color: #2a2e46;

@@ -9,9 +9,9 @@ function Servicess() {
         <div className="services" id="Servicess">
             <div className="containerA">
                 <div className="services__header">
-                    <div className="common">
+                    <div data-aos="fade-up" className="common">
                         <h3 className="heading">SERVICES</h3>
-                        <h1 className="mainHeader"> My Services</h1>
+                        <h1 className="mainHeader"> Mes Services</h1>
                         <p className="mainContent">
                             Je suis un jeune développeur vous proposant mes services dans
                             plusieurs domaines à savoir le Web, le Mobile et le Desktop
@@ -19,39 +19,45 @@ function Servicess() {
                         <div className="commonBorder"></div>
                     </div>
                     <div className="rowws">
-                        <div className="col__4">
+                        <div data-aos="zoom-in-right" className="col__4">
                             <div className="services__boxx">
                                 <FaGithub className="github" />
                                 <div className="servicess__box-header">
                                     Web Development
                                 </div>
                                 <div className="servicess__box-p">
+                                Peu importe l'activité que vous exercez, vous avez besoin d'être présent sur le web.
+                                Confiez-moi la création de votre site vitrine,<br/> e-commerce ou e-evenement...
+                                </div>
+                                {/* <div className="servicess__box-p">
                                     Développement des sites internet, des application Web,
                                     le web Design et autres travaux concernant le web...
-                                </div>
+                                </div> */}
                             </div>
                         </div>
-                        <div className="col__4">
+                        <div data-aos="zoom-in" className="col__4">
                             <div className="services__boxx">
                                 <FaMobile className="github" />
                                 <div className="servicess__box-header">
                                     Development Mobile
                                 </div>
                                 <div className="servicess__box-p">
-                                    Développement de tout types d'applications s'éxécutant
-                                    aussi bien sur Android et sur IOS...
+                                Avoir une application mobile aujourd'hui fait 
+                                gagner en visibilité, et améliore l’image de marque. C’est l’occasion pour une entreprise de mettre 
+                                en avant son activité, et de proposer de nouveaux services à ces clients...
                                 </div>
                             </div>
                         </div>
-                        <div className="col__4">
+                        <div data-aos="zoom-in-left" className="col__4">
                             <div className="services__boxx">
                                 <FaDesktop className="github" />
                                 <div className="servicess__box-header">
                                     Dévelopment Desktop
                                 </div>
                                 <div className="servicess__box-p">
-                                    Développement de tout types d'applications s'éxécutant
-                                    aussi bien sur Windows, Linux...
+                                Une application desktop est une application qui s’exécute complètement 
+                                sur un seul PC et donc n’a pas besoin d’un accès Web pour fonctionner.
+                                et permet la gestion facile de vos activités
                                 </div>
                             </div>
                         </div>

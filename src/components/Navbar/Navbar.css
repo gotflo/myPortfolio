@@ -53,7 +53,16 @@
 .fa-bars{
     color: #fff;
 }
-
+.linkItem{
+    color: rgb(233, 231, 231);
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 21px;
+}
+.linkItem:hover{
+    color: rgb(0, 0, 0);
+    /*font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;*/
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;    
+}
 .nav__links-mobile{
     display: none;
 }
@@ -91,7 +100,7 @@
         padding: .8rem;
         width: 100%;
         display: table;                     
-        margin-bottom: 2rem;                  
+        margin-bottom: 1.7rem;                               
     }
 
     .nav__links:hover{

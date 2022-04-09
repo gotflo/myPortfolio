@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { MenuItems } from "./MenuItems";
 import logo from "../../images/logo.png";
-import "./Navbar.css"
+import "./Navbar.css";
 import { Link } from "react-scroll";
 class Navbar extends Component {
     state = { clicked: false }
@@ -25,7 +25,7 @@ class Navbar extends Component {
 
                     {MenuItems.map((item, index) => {
                         return (
-                            <li key={index}>
+                            <li className="linkItem" key={index}>
                                 <Link className={item.cName} to={item.url} smooth={true} duration={300} >
                                     {item.title}
                                 </Link>

@@ -2,7 +2,7 @@ import React from 'react';
 import ImageP from "../images/projetP222.png";
 import Typed from "react-typed";
 import {
-    FaFacebookF,
+    FaGithub,
     FaTwitter,
     FaInstagram,
     FaWhatsapp
@@ -10,7 +10,6 @@ import {
 const Bannier = () => {
     const [state] = React.useState({
         title: "Florent Gotliebe AKPA",
-        text: "Développeur WEB | MOBLIE | DESKTOP"
     });
     return (
         <header className="header" id="Bannier">
@@ -18,11 +17,11 @@ const Bannier = () => {
                 <div className="row">
                     <div className="col6">
                         <div className="header__content">
-                            <div className="header__section">
+                            <div className="header__section" data-aos="fade-right">
                                 <ul className="header__ul">
-                                    <a className="iconn" href="https://www.facebook.com/komlagotliebe.akpa">
+                                    <a className="icong" href="https://github.com/gotflo">
                                         <li>
-                                            <FaFacebookF className="headerIcon" />
+                                            <FaGithub className="headerIcon" />
                                         </li>
                                     </a>
                                     <a className="iconn" href="https://twitter.com/FlorentGotliebe" >
@@ -62,7 +61,7 @@ const Bannier = () => {
                 </div>
             </div>
             <div className="">
-                <div className="bannier__img">
+                <div className="bannier__img" data-aos="fade-left">
                     <img className="imgP" src={ImageP} height="200px" alt="Mon profil" />
                 </div>
             </div>

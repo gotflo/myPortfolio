@@ -11,12 +11,11 @@ const Contact = () => {
             <div className="containerAA">
                 <div className="contactSection">
                     <div className="row justifyConter">
-                        <div className="col6">
+                        <div data-aos="zoom-in"
+                            data-aos-anchor-placement="top-bottom"
+                            className="col69">
                             <div className="contactSection-logo">
                                 <img src="/images/logo.png" alt="" />
-                            </div>
-                            <div className="mot_fin">
-                                Copyright © 2021 Gotflo | +228 93 47 17 03
                             </div>
                             <ul className="contactCircles">
                                 <a className="iconn" href="https://www.facebook.com/komlagotliebe.akpa">
@@ -40,6 +39,9 @@ const Contact = () => {
                                     </li>
                                 </a>
                             </ul>
+                            <div className="mot_fin">
+                                Copyright © 2021 Gotflo | +228 93 47 17 03
+                            </div>
                         </div>
                     </div>
                 </div>

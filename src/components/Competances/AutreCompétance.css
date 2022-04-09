@@ -1,0 +1,45 @@
+.list li{
+    color: aqua; 
+    list-style: none;      
+}
+.otherSkills{   
+    padding: 8rem;
+    margin-bottom: -9rem;
+    margin-top: -6rem;       
+}
+
+.dipos{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+       
+}
+h3{
+    font-size: 1.4rem;
+    margin-bottom: .5rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ff4a57;
+    text-transform: uppercase;
+}
+
+@media (max-width: 960px) {
+
+    .otherSkills{      
+    
+        margin-bottom: -3rem;
+        margin-top: -1rem;   
+        padding: 50px;
+        width: 130%;
+        margin-left: -25%;         
+        z-index: 2;
+        align-content: center;    
+    }
+
+    .dipos{
+        flex-wrap: wrap;
+        display: grid;
+        
+        /*justify-content: space-between;*/
+       /* align-items: center; */       
+    }
+}

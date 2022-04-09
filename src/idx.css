@@ -1,0 +1,28 @@
+::-webkit-scrollbar {
+    width: 0.4em;
+    height: 0.5em;
+}
+
+::-webkit-scrollbar-track {
+    background: rgb(106, 59, 236);
+    border-radius: 100vw;
+    margin-block: 0.1rem;
+    margin-inline: 4em;
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+        90deg,
+        rgba(2, 0, 36, 1) 0%,
+        rgba(9, 9, 121, 0.9444152661064426) 26%,
+        rgba(0, 212, 255, 1) 82%
+    );
+    /* background: hsl(120 100% 20% / 1); */
+    border: 0.15rem solid rgba(6, 14, 65, 0.589);
+    border-radius: 100vw;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: rgb(0, 14, 26);
+}
