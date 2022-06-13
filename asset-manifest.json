@@ -1,33 +1,37 @@
 {
   "files": {
-    "main.css": "/myPortfolio/static/css/main.abfe18cb.chunk.css",
-    "main.js": "/myPortfolio/static/js/main.538e22f9.chunk.js",
-    "main.js.map": "/myPortfolio/static/js/main.538e22f9.chunk.js.map",
+    "main.css": "/myPortfolio/static/css/main.83d8feff.chunk.css",
+    "main.js": "/myPortfolio/static/js/main.9e525b32.chunk.js",
+    "main.js.map": "/myPortfolio/static/js/main.9e525b32.chunk.js.map",
     "runtime-main.js": "/myPortfolio/static/js/runtime-main.101364c5.js",
     "runtime-main.js.map": "/myPortfolio/static/js/runtime-main.101364c5.js.map",
     "static/css/2.dc65ad6d.chunk.css": "/myPortfolio/static/css/2.dc65ad6d.chunk.css",
-    "static/js/2.01212abe.chunk.js": "/myPortfolio/static/js/2.01212abe.chunk.js",
-    "static/js/2.01212abe.chunk.js.map": "/myPortfolio/static/js/2.01212abe.chunk.js.map",
+    "static/js/2.14e5be84.chunk.js": "/myPortfolio/static/js/2.14e5be84.chunk.js",
+    "static/js/2.14e5be84.chunk.js.map": "/myPortfolio/static/js/2.14e5be84.chunk.js.map",
     "index.html": "/myPortfolio/index.html",
     "static/css/2.dc65ad6d.chunk.css.map": "/myPortfolio/static/css/2.dc65ad6d.chunk.css.map",
-    "static/css/main.abfe18cb.chunk.css.map": "/myPortfolio/static/css/main.abfe18cb.chunk.css.map",
-    "static/js/2.01212abe.chunk.js.LICENSE.txt": "/myPortfolio/static/js/2.01212abe.chunk.js.LICENSE.txt",
+    "static/css/main.83d8feff.chunk.css.map": "/myPortfolio/static/css/main.83d8feff.chunk.css.map",
+    "static/js/2.14e5be84.chunk.js.LICENSE.txt": "/myPortfolio/static/js/2.14e5be84.chunk.js.LICENSE.txt",
     "static/media/Bannier.scss": "/myPortfolio/static/media/BackgroundG.834133f5.jpg",
+    "static/media/Change3.99acd518.png": "/myPortfolio/static/media/Change3.99acd518.png",
+    "static/media/GesCDENew.982c577d.png": "/myPortfolio/static/media/GesCDENew.982c577d.png",
+    "static/media/Gotflo_cv.a4c2b459.pdf": "/myPortfolio/static/media/Gotflo_cv.a4c2b459.pdf",
     "static/media/cisco-siège.f47b82d8.jpg": "/myPortfolio/static/media/cisco-siège.f47b82d8.jpg",
     "static/media/defi.a0d01eea.jpg": "/myPortfolio/static/media/defi.a0d01eea.jpg",
     "static/media/gestionMagasin.f3edf027.png": "/myPortfolio/static/media/gestionMagasin.f3edf027.png",
     "static/media/gestionStock.5d5d3344.png": "/myPortfolio/static/media/gestionStock.5d5d3344.png",
-    "static/media/gotflo.e57efa57.pdf": "/myPortfolio/static/media/gotflo.e57efa57.pdf",
+    "static/media/logexcolab.3ae7b75b.png": "/myPortfolio/static/media/logexcolab.3ae7b75b.png",
     "static/media/logo.7be34f57.png": "/myPortfolio/static/media/logo.7be34f57.png",
-    "static/media/my-tof1.f5db91a1.png": "/myPortfolio/static/media/my-tof1.f5db91a1.png",
     "static/media/myPortfolio.102f9b9f.png": "/myPortfolio/static/media/myPortfolio.102f9b9f.png",
-    "static/media/projetP222.034d8ef2.png": "/myPortfolio/static/media/projetP222.034d8ef2.png"
+    "static/media/mytof.b9334136.jpg": "/myPortfolio/static/media/mytof.b9334136.jpg",
+    "static/media/Portfolio.scss": "/myPortfolio/static/media/projectBg22.99d8ae29.jpg",
+    "static/media/projetP221.9b202e14.png": "/myPortfolio/static/media/projetP221.9b202e14.png"
   },
   "entrypoints": [
     "static/js/runtime-main.101364c5.js",
     "static/css/2.dc65ad6d.chunk.css",
-    "static/js/2.01212abe.chunk.js",
-    "static/css/main.abfe18cb.chunk.css",
-    "static/js/main.538e22f9.chunk.js"
+    "static/js/2.14e5be84.chunk.js",
+    "static/css/main.83d8feff.chunk.css",
+    "static/js/main.9e525b32.chunk.js"
   ]
 }
