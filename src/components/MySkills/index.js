@@ -10,7 +10,7 @@ const Myskills = (props) => {
     const skills = [
         {
             skillName: 'HTML5/CSS3',
-            value: 80,
+            value: 84,
             textColor: "#00A19D",
             pathColor: "#00A19D"
         },
@@ -42,31 +42,37 @@ const Myskills = (props) => {
     const frame = [
         {
             skillName: 'React',
-            value: 70,
+            value: 71,
             textColor: "#FFB319",
             pathColor: "#FFB319"
         },
         {
             skillName: 'Laravel',
-            value: 73,
+            value: 78,
             textColor: "#F42236",
             pathColor: "#F42236"
         },
         {
             skillName: 'Flutter',
-            value: 65,
+            value: 60,
             textColor: "#07a8f1",
             pathColor: "#07a8f1"
         },
         {
             skillName: 'Material UI',
-            value: 45,
+            value: 55,
             textColor: "#FF7600",
             pathColor: "#FF7600"
         },
         {
-            skillName: 'Alpine js',
-            value: 50,
+            skillName: 'Spring Boot',
+            value: 80,
+            textColor: "#F05945",
+            pathColor: "#F05945"
+        },
+        {
+            skillName: 'Angular',
+            value: 75,
             textColor: "#F05945",
             pathColor: "#F05945"
         },

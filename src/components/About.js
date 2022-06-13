@@ -1,12 +1,11 @@
 import React from "react";
-import my_tof from "../images/my-tof1.png";
-import CV from "../gotflo.pdf";
+import my_tof from "../images/mytof.jpg";
+import CV from "../Gotflo_cv.pdf";
 
 const About = () => {
     const [header] = React.useState({
         subHeader: "A Propos",
-        text: "Je vous parle un peu de ma personnalité, de mon Parcours,\
-        de mes compétences et aussi de mes domaines de travaille. Merci",
+        text: "je m'efforce de mieux faire mon travail quand un minimum de conditions est réuni",
     });
     const [state] = React.useState([
         { id: 1, title: "Name:", text: "Florent Gotliebe AKPA" },
@@ -35,14 +34,10 @@ const About = () => {
                         <div data-aos="zoom-in-up" className="about__info">
                             <h1>Salut</h1>
                             <div className="about__info-p1">
-                                Je suis un jeune passionné de l'informatique qui a eu son premier diplôme en
-                                informatique bureautique en Juillet 2013 dans le Centre informatique Espoir.
+                                En tant que développeur j'adore documenter mon travail afin d'être de plus en plus efficace possible
                             </div>
                             <div className="about__info-p2">
-                            En 2019, je m’inscris en Licence professionnelle à l'INSTITUT POLYTECHNIQE DEFITECH,
-                            une école de renommée qui depuis quelques années forme des experts dans les domaines
-                            informatique a savoir (le Génie Logiciel et en Système Réseau), là où je continue mes études
-                            dans le parcours Génie Logiciel.
+                            Outre mes compétences techniques, je possède aussi des connaissances dans la gestion de projet, une excellente aptitudes à résoudre des problèmes informatiques, une capacité d'adaptation en fonction du besoin, des qualités relationnelles, un esprit d'équipe et une grande rigueur.
                             </div>
                             <div className="info__contacts">
                                 <div id="grid-row">

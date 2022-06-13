@@ -24,9 +24,9 @@ class Navbar extends Component {
                     'nav-menu'}>
 
                     {MenuItems.map((item, index) => {
-                        return (
-                            <li className="linkItem" key={index}>
-                                <Link className={item.cName} to={item.url} smooth={true} duration={300} >
+                        return (                            
+                            <li className="linkItem" key={index}>                            
+                                <Link activeClassName="active" className = {item.cName} to={item.url} smooth={true} duration={300} >
                                     {item.title}
                                 </Link>
                             </li>

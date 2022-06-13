@@ -2,6 +2,9 @@ import React, { useEffect, useState } from 'react';
 import "./Portfolio.scss";
 import PortfolioList from './portfolioList/PortfolioList';
 import { webapp, mobileapp, desktopapp } from "../../data";
+import {
+    FaGithub
+} from "react-icons/fa";
 
 function Portfolio() {
     const [selected, setSelected] = useState("web");
@@ -43,6 +46,7 @@ function Portfolio() {
     return (
         <div className="portfolio" id="Projets">
             <h1>Mes projets</h1>
+
             <ul data-aos="zoom-in">
                 {list.map(item => (
                     <PortfolioList
@@ -53,14 +57,26 @@ function Portfolio() {
                     />
                 ))}
             </ul>
+
+
             <div data-aos="zoom-out" className="containerP">
                 {data.map(d => (
                     <div className="itemP">
-                        <img src={d.imgPro}
-                            alt="" href={d.href}
+                        <img alt={d.title} src={d.imgPro}
+                            href={d.href}
                         />
-                        <h4 className="Ptitle" ><a className='ref' href={d.href}>{d.title}</a></h4>
+                        <h4 className="Ptitle" >
+                            <a className='ref' href={d.github}>
+                                <FaGithub className='iconeye' />
+                            </a>
+                            <div className='comment'>
+                                <h4> <a className='ref' href={d.href}>{d.title}</a></h4>
+                                <h2 className='text'>{d.Comment}</h2>
+                                <h2 className='tech'>{d.tech}</h2>
+                            </div>
+                        </h4>
                     </div>
+
                 ))}
             </div>
         </div>

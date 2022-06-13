@@ -12,10 +12,10 @@ function Servicess() {
                     <div data-aos="fade-up" className="common">
                         <h3 className="heading">SERVICES</h3>
                         <h1 className="mainHeader"> Mes Services</h1>
-                        <p className="mainContent">
+                        {/* <p className="mainContent">
                             Je suis un jeune développeur vous proposant mes services dans
                             plusieurs domaines à savoir le Web, le Mobile et le Desktop
-                        </p>
+                        </p> */}
                         <div className="commonBorder"></div>
                     </div>
                     <div className="rowws">
