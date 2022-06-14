@@ -27,8 +27,8 @@ export const webapp = [
         id: 3,
         title: "GesCDE",
         imgPro: GesCDENew,        
-        github: "",
-        Comment: "Développement d’une application de gestion pour faciliter la gestion des enfants du centre de compassion CDE la grâce",
+        github: "https://github.com/gotflo/gescde",
+        Comment: "Développement d’une application de gestion pour faciliter la gestion des enfants des centres de compassion (CDE)",
         tech: "Technologie utilisées : Spring Boot (Java, JPA), Angular 13(HTML, SASS, TypeScript), MDBootstrap, Electron Js, MySQL"
     },
     {
