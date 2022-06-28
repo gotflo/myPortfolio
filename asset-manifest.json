@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/myPortfolio/static/css/main.c725a0b4.chunk.css",
-    "main.js": "/myPortfolio/static/js/main.f723983c.chunk.js",
-    "main.js.map": "/myPortfolio/static/js/main.f723983c.chunk.js.map",
+    "main.css": "/myPortfolio/static/css/main.780ea646.chunk.css",
+    "main.js": "/myPortfolio/static/js/main.ba2447bf.chunk.js",
+    "main.js.map": "/myPortfolio/static/js/main.ba2447bf.chunk.js.map",
     "runtime-main.js": "/myPortfolio/static/js/runtime-main.101364c5.js",
     "runtime-main.js.map": "/myPortfolio/static/js/runtime-main.101364c5.js.map",
     "static/css/2.dc65ad6d.chunk.css": "/myPortfolio/static/css/2.dc65ad6d.chunk.css",
@@ -10,7 +10,7 @@
     "static/js/2.14e5be84.chunk.js.map": "/myPortfolio/static/js/2.14e5be84.chunk.js.map",
     "index.html": "/myPortfolio/index.html",
     "static/css/2.dc65ad6d.chunk.css.map": "/myPortfolio/static/css/2.dc65ad6d.chunk.css.map",
-    "static/css/main.c725a0b4.chunk.css.map": "/myPortfolio/static/css/main.c725a0b4.chunk.css.map",
+    "static/css/main.780ea646.chunk.css.map": "/myPortfolio/static/css/main.780ea646.chunk.css.map",
     "static/js/2.14e5be84.chunk.js.LICENSE.txt": "/myPortfolio/static/js/2.14e5be84.chunk.js.LICENSE.txt",
     "static/media/Bannier.scss": "/myPortfolio/static/media/BackgroundG.834133f5.jpg",
     "static/media/Change3.99acd518.png": "/myPortfolio/static/media/Change3.99acd518.png",
@@ -20,8 +20,8 @@
     "static/media/defi.a0d01eea.jpg": "/myPortfolio/static/media/defi.a0d01eea.jpg",
     "static/media/gestionMagasin.f3edf027.png": "/myPortfolio/static/media/gestionMagasin.f3edf027.png",
     "static/media/gestionStock.5d5d3344.png": "/myPortfolio/static/media/gestionStock.5d5d3344.png",
+    "static/media/gfcoding_logo2.c88e3831.png": "/myPortfolio/static/media/gfcoding_logo2.c88e3831.png",
     "static/media/logexcolab.3ae7b75b.png": "/myPortfolio/static/media/logexcolab.3ae7b75b.png",
-    "static/media/logo.7be34f57.png": "/myPortfolio/static/media/logo.7be34f57.png",
     "static/media/myPortfolio.102f9b9f.png": "/myPortfolio/static/media/myPortfolio.102f9b9f.png",
     "static/media/mytof.b9334136.jpg": "/myPortfolio/static/media/mytof.b9334136.jpg",
     "static/media/Portfolio.scss": "/myPortfolio/static/media/projectBg22.99d8ae29.jpg",
@@ -31,7 +31,7 @@
     "static/js/runtime-main.101364c5.js",
     "static/css/2.dc65ad6d.chunk.css",
     "static/js/2.14e5be84.chunk.js",
-    "static/css/main.c725a0b4.chunk.css",
-    "static/js/main.f723983c.chunk.js"
+    "static/css/main.780ea646.chunk.css",
+    "static/js/main.ba2447bf.chunk.js"
   ]
 }
