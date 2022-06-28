@@ -53,7 +53,7 @@ function Servicess() {
                             <div className="services__boxx">
                                 <FaFigma className="github" />
                                 <div className="servicess__box-header">
-                                    Dévelopment Desktop
+                                    UI/UX Design
                                 </div>
                                 <div className="servicess__box-p">
                                 {/* Une application desktop est une application qui s’exécute complètement 
