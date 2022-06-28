@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "./Portfolio.scss";
 import PortfolioList from './portfolioList/PortfolioList';
-import { webapp, mobileapp, desktopapp } from "../../data";
+import { webapp, mobileapp, desktopapp, UIUX } from "../../data";
 import {
     FaGithub
 } from "react-icons/fa";
@@ -22,6 +22,10 @@ function Portfolio() {
             id: "desktop",
             title: "Desktop App",
         },
+        {
+            id: "UIUX",
+            title: "UI/UX Design",
+        },
 
     ];
 
@@ -36,6 +40,9 @@ function Portfolio() {
                 break;
             case "desktop":
                 setData(desktopapp);
+                break;
+            case "UIUX":
+                setData(UIUX);
                 break;
             default:
                 setData(webapp);

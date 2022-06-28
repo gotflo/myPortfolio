@@ -1,20 +1,22 @@
-.bannier{
+$font: 'Poppins', sans-serif;
+
+.bannier {
     width: 100%;
-    height: 100vh;  
+    height: 100vh;
     margin-top: 4.8rem;
     background: url("../../../src/images/BackgroundG.jpg");
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: 0rem -11rem;
     background-attachment: fixed;
     overflow: hidden;
     z-index: 2;
 
-    .bcontainer{
+    .bcontainer {
         width: 1200px;
         margin: 0 auto;
 
-        .brow{
+        .brow {
             --bs-gutter-x: 1.5rem;
             --bs-gutter-y: 0;
             //   display: flex;
@@ -23,9 +25,10 @@
             margin-right: calc(var(--bs-gutter-x) * -.5);
             margin-left: calc(var(--bs-gutter-x) * -.5);
         }
-        .bheader__content{            
+
+        .bheader__content {
             align-items: center;
-            height: 100vh;            
+            height: 100vh;
             margin: 0 auto;
             justify-content: center;
             align-items: center;
@@ -35,12 +38,13 @@
             width: 100%;
             color: #fff;
         }
-        .bheader__ul{
+
+        .bheader__ul {
             list-style-type: none;
             display: flex;
             margin-bottom: 20px;
             margin-left: -40px;
-            
+
             li {
                 width: 50px;
                 height: 50px;
@@ -51,19 +55,42 @@
                 justify-content: center;
                 margin: 0 10px;
                 transition: all 0.5s linear;
-                cursor: pointer;   
-              }
-              
+                cursor: pointer;
+            }
+
         }
     }
-    
-}
-.bbannier__img{
-    padding: 0 650px;
-    margin-top: -900px;  
-    border-radius: 15px 50px;    
 
-    .profile{
+    .typed-text {
+        font-size: 20px;
+
+    }
+
+    .disegn {
+        width: 200px;
+        font-size: 18px;
+        font-weight: 520;
+        text-transform: uppercase;
+        background: linear-gradient(to right, #30CFD0 0%, #bb87fc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        font: {
+            size: 18px;
+            family: $font;
+        }
+
+        ;
+    }
+
+}
+
+.bbannier__img {
+    padding: 0 650px;
+    margin-top: -900px;
+    border-radius: 15px 50px;
+
+    .profile {
         border-radius: 15px 50px;
         // background: #81817f1c;
         height: 20rem;
@@ -71,7 +98,7 @@
         margin-top: 8rem;
         margin-left: 19.8rem;
 
-        .imgP{
+        .imgP {
             margin-left: 0.5rem;
             margin-top: -4rem;
             height: 26rem;
@@ -83,7 +110,7 @@
 }
 
 @media (max-width: 960px) {
-    .bannier{
+    .bannier {
         width: 100%;
         padding: 0;
         margin-left: 0rem;
@@ -93,14 +120,14 @@
         background-size: cover;
         overflow: hidden;
 
-        .bcontainer{
-            width: 50% ;
+        .bcontainer {
+            width: 50%;
             padding: 0 50px;
             margin: 0 auto;
             padding-left: 0;
             margin-left: 0;
             margin-right: 0;
-            
+
             .bheader__content {
                 display: flex;
                 align-items: center;
@@ -114,23 +141,25 @@
                     font-size: 35px;
                     font-weight: 700;
                     margin-bottom: 20px;
-                  }
-                  .bheader__section p {
+                }
+
+                .bheader__section p {
                     font-size: 20px;
                     font-weight: 300;
                     line-height: 30px;
                     margin-bottom: 50px;
-                    
-                  }
-                  .bheader__ul {
+
+                }
+
+                .bheader__ul {
                     list-style-type: none;
                     display: flex;
                     margin-bottom: 20px;
                     margin-top: -240px;
                     margin-left: -40px;
-                  }
-              }
+                }
+            }
         }
-      }
+    }
 
 }

@@ -44,12 +44,12 @@ const Bannier2 = () => {
                                 </ul>
                                 <h1>{state.title}</h1>
                                 <Typed className="typed-text"
-                                    strings={["Développeur WEB ", "Développeur MOBLIE ", "Développeur DESKTOP"]}
+                                    strings={["Développeur WEB ", "Développeur MOBLIE "]}
                                     typeSpeed={60}
                                     backSpeed={60}
                                     loop
                                 />
-                                <p></p>
+                                <p className='disegn'>UX/UI Designer</p>
                                 <div className="header__buttons">
                                     <a href="#About">
                                         <button className="btnn">Mon Portfolio</button>

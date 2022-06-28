@@ -27,7 +27,7 @@ export const webapp = [
         id: 3,
         title: "GesCDE",
         imgPro: GesCDENew,        
-        github: "https://github.com/gotflo/gescde",
+        // github: "https://github.com/gotflo/gescde",
         Comment: "Développement d’une application de gestion pour faciliter la gestion des enfants des centres de compassion (CDE)",
         tech: "Technologie utilisées : Spring Boot (Java, JPA), Angular 13(HTML, SASS, TypeScript), MDBootstrap, Electron Js, MySQL"
     },
@@ -35,8 +35,8 @@ export const webapp = [
         id: 4,
         title: "LOGEXCOLAB",
         imgPro: logexcolab,        
-        github: "https://github.com/Tdev228/logex-colab/tree/florent",
-        Comment: "Développement de la Plateforme LOGEXCOLAB (Forum pour acteurs Tech)Plateforme web de discussion entre acteurs tech africains et ceux des quatres coins du monde.",
+        // github: "https://github.com/Tdev228/logex-colab/tree/florent",
+        Comment: "Participant au développement de la Plateforme LOGEXCOLAB (Forum pour acteurs Tech)Plateforme web de discussion entre acteurs tech africains et ceux des quatres coins du monde.",
         tech: "Technologie utilisées : Laravel 8.x, HTML, CSS, JavaScript, Livewire, TailwindCSS, Alpine.js"
     }
 ];
@@ -63,5 +63,12 @@ export const desktopapp = [
         imgPro: gestionMagas,
         Comment: "Développement d'une application pour géles les stocks d'un amagasins, depuis la commande des produits jusqu'à la vente",
         tech: "Technologie utilisées : JavaSwing, JavaFx"
+    }
+];
+export const UIUX = [
+    {
+        id: 1,
+        title: "En produiction ...",
+        imgPro: "",
     }
 ];
