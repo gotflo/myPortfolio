@@ -1,8 +1,9 @@
 import React from 'react'
 import {
     FaGithub,
-    FaDesktop,
-    FaMobile
+    
+    FaMobile,
+    FaFigma
 } from "react-icons/fa";
 function Servicess() {
     return (
@@ -50,14 +51,18 @@ function Servicess() {
                         </div>
                         <div data-aos="zoom-in-left" className="col__4">
                             <div className="services__boxx">
-                                <FaDesktop className="github" />
+                                <FaFigma className="github" />
                                 <div className="servicess__box-header">
                                     Dévelopment Desktop
                                 </div>
                                 <div className="servicess__box-p">
-                                Une application desktop est une application qui s’exécute complètement 
+                                {/* Une application desktop est une application qui s’exécute complètement 
                                 sur un seul PC et donc n’a pas besoin d’un accès Web pour fonctionner.
-                                et permet la gestion facile de vos activités
+                                et permet la gestion facile de vos activités */}
+
+                                    Concevoir esthétiquement des interfaces utilisateur ou l'ingénierie d'interface utilisateur
+                                    pour des appareils mobiles, des sites web et d'autres appareils électroniques ,
+                                    en mettant l'accent sur l' expérience utilisateur...
                                 </div>
                             </div>
                         </div>
